@@ -3,7 +3,102 @@
 }
 
 @media (min-width: 1440px) {
-  #starlight__sidebar {
-    width: calc((100% - (1440px - 64px)) / 2 + 272px - 32px);
+  :root {
+    --total-sidebar-width: calc((100% - (1440px - 64px)) / 2 + 272px - 32px);
   }
+
+  #starlight__sidebar {
+    width: var(--total-sidebar-width);
+  }
+}
+
+header.header {
+  padding-left: calc(var(--total-sidebar-width) + 2rem);
+  padding-right: calc((100vw - 1440px) / 2 + 32px) !important;
+}
+
+/* TODO: Remove once component has been overridden */
+.title-wrapper {
+  display: none;
+}
+
+header.header > div.header {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between !important;
+}
+
+button > kbd {
+  display: block;
+  margin-inline-start: .5rem !important;
+}
+
+:root {
+  --sl-content-width: 45rem;
+  --sl-sidebar-width: var(--total-sidebar-width);
+}
+
+aside.right-sidebar-container {
+  max-width: 256px;
+}
+
+main {
+  max-width: calc(688px + 4rem);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  right: 2rem;
+  margin-top: 3rem;
+}
+
+.content-panel {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.sl-container {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+
+div.right-sidebar {
+  width: 100%;
+  max-width: 256px;
+  border: none;
+  overflow: visible;
+}
+
+.right-sidebar-panel {
+  margin-top: 3rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--sl-color-gray-5);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  position: relative;
+  right: 5rem;
+}
+
+starlight-toc ul li a {
+  padding-left: 0;
+  font-size: .875em !important;
+  margin-bottom: .25rem;
+}
+
+starlight-toc h2 {
+  font-size: .875em !important;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 24px !important;
+  margin-bottom: 1rem;
+}
+
+.content-panel ul {
+  padding-inline-start: 20px;
 }
