@@ -1,0 +1,32 @@
+{
+	"name": "starlight-theme-starpress",
+	"version": "1.0.0",
+	"type": "module",
+	"exports": {
+		".": "./index.ts",
+		"./styles/*": "./styles/*"
+	},
+	"homepage": "https://github.com/louisescher/starpress",
+	"author": "Louis Escher <louisescher@proton.me>",
+	"files": [
+		"index.ts",
+		"styles"
+	],
+	"keywords": [
+		"withastro",
+		"starlight",
+		"vitepress"
+	],
+	"devDependencies": {
+		"astro": "catalog:",
+		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"@astrojs/starlight": "^0.30.0",
+		"astro": "^5.0.0"
+	},
+	"dependencies": {
+		"@astrojs/starlight": "catalog:",
+		"astro-expressive-code": "^0.38.3"
+	}
+}
