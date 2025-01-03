@@ -9,8 +9,7 @@
 	"homepage": "https://github.com/louisescher/starpress",
 	"author": "Louis Escher <louisescher@proton.me>",
 	"files": [
-		"index.ts",
-		"styles"
+		"src"
 	],
 	"keywords": [
 		"withastro",
