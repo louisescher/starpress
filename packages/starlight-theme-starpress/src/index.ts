@@ -37,7 +37,6 @@ export default function createPlugin(): StarlightPlugin {
 					]),
 					customCss: [
 						"starlight-theme-starpress/styles/theme.css",
-						"@fontsource-variable/vazirmatn",
 						...(config.customCss ?? []),
 					]
 				});
