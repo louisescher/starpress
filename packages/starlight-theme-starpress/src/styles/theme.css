@@ -1,0 +1,9 @@
+#starlight__sidebar {
+  padding-left: max(32px, calc((100% - (1440px - 64px)) / 2));
+}
+
+@media (min-width: 1440px) {
+  #starlight__sidebar {
+    width: calc((100% - (1440px - 64px)) / 2 + 272px - 32px);
+  }
+}

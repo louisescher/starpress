@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"type": "module",
 	"exports": {
-		".": "./index.ts",
-		"./styles/*": "./styles/*"
+		".": "./src/index.ts",
+		"./styles/*": "./src/styles/*"
 	},
 	"homepage": "https://github.com/louisescher/starpress",
 	"author": "Louis Escher <louisescher@proton.me>",
