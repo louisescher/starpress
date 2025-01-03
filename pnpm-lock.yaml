@@ -61,6 +61,9 @@ importers:
       astro-expressive-code:
         specifier: ^0.38.3
         version: 0.38.3(astro@5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1))
+      astro-vtbot:
+        specifier: ^2.0.3
+        version: 2.0.3
     devDependencies:
       astro:
         specifier: 'catalog:'
@@ -828,6 +831,18 @@ packages:
   '@vscode/l10n@0.0.18':
     resolution: {integrity: sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==}
 
+  '@vtbag/cam-shaft@1.0.5':
+    resolution: {integrity: sha512-fQIS4v8KmZ8t2FzfijAroX5i4s4KC1bgNoTZlrusBwXU5jaU6CxG6iFPgkPYRXre6tKzI0/aQTjPt03dyCY0ew==}
+
+  '@vtbag/element-crossing@1.1.0':
+    resolution: {integrity: sha512-1YL609KPwhHUKRrVNfoogQCVJPfFrE5DubOLcCJZLHVCjWZ2ZAPcaq1wR2OP6nXD0Ok9JLX41YsEtYBYzw6CxQ==}
+
+  '@vtbag/inspection-chamber@1.0.19':
+    resolution: {integrity: sha512-W2YQO+5inuc6YUvQ62clhBj2W+hl1zonrXMPnpnbggW9wQ0wq0nCc+C7mZ6e46z83Yv/2+M7JxVkBS5y7AoQkg==}
+
+  '@vtbag/turn-signal@1.3.0':
+    resolution: {integrity: sha512-2Dj5sHjCrdDclGInN8K2pGCwlWmhT53jIqKL7sJLOFYKJlDSTz+LcC/JJFYNDPr7US001Aum51QtCcz1FXbvHw==}
+
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -888,6 +903,9 @@ packages:
     resolution: {integrity: sha512-Tvdc7RV0G92BbtyEOsfJtXU35w41CkM94fOAzxbQP67Wj5jArfserJ321FO4XA7WG9QMV0GIBmQq77NBIRDzpQ==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
+
+  astro-vtbot@2.0.3:
+    resolution: {integrity: sha512-wUFR8HWNRQrx6qjLeq3C7h8Rdl4vqB7gKv0pAlFTZbLgC7ath8gxOlGsviyl0vmMLJnu710e0NszsO0vKHzS/g==}
 
   astro@5.1.2:
     resolution: {integrity: sha512-+U5lXPEJZ6cQx0botGbPhzN6XGWRgDtXgy/RUkpTmUj18LW6pbzYo0O0k3hFWOazlI039bZ+4P2e/oSNlKzm0Q==}
@@ -2989,6 +3007,14 @@ snapshots:
 
   '@vscode/l10n@0.0.18': {}
 
+  '@vtbag/cam-shaft@1.0.5': {}
+
+  '@vtbag/element-crossing@1.1.0': {}
+
+  '@vtbag/inspection-chamber@1.0.19': {}
+
+  '@vtbag/turn-signal@1.3.0': {}
+
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
       acorn: 8.14.0
@@ -3039,6 +3065,13 @@ snapshots:
     dependencies:
       astro: 5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1)
       rehype-expressive-code: 0.38.3
+
+  astro-vtbot@2.0.3:
+    dependencies:
+      '@vtbag/cam-shaft': 1.0.5
+      '@vtbag/element-crossing': 1.1.0
+      '@vtbag/inspection-chamber': 1.0.19
+      '@vtbag/turn-signal': 1.3.0
 
   astro@5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1):
     dependencies:

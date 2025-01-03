@@ -4,6 +4,7 @@
 	"type": "module",
 	"exports": {
 		".": "./src/index.ts",
+		"./components/*": "./src/components/*",
 		"./styles/*": "./src/styles/*"
 	},
 	"homepage": "https://github.com/louisescher/starpress",
@@ -26,6 +27,7 @@
 	},
 	"dependencies": {
 		"@astrojs/starlight": "catalog:",
-		"astro-expressive-code": "^0.38.3"
+		"astro-expressive-code": "^0.38.3",
+		"astro-vtbot": "^2.0.3"
 	}
 }

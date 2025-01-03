@@ -1,5 +1,9 @@
+::view-transition-group(root) {
+	animation-duration: 0s !important; /* Disable the animation by setting duration to 0 */
+}
+
 #starlight__sidebar {
-  padding-left: max(32px, calc((100% - (1440px - 64px)) / 2));
+	padding-left: max(32px, calc((100% - (1440px - 64px)) / 2));
 }
 
 @media (min-width: 1440px) {
