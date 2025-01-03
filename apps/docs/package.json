@@ -12,7 +12,6 @@
   "dependencies": {
     "@astrojs/check": "catalog:",
     "@astrojs/starlight": "catalog:",
-    "@fontsource/inter": "^5.1.0",
     "astro": "catalog:",
     "sharp": "catalog:",
     "starlight-package-managers": "^0.8.0",

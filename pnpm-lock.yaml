@@ -34,9 +34,6 @@ importers:
       '@astrojs/starlight':
         specifier: 'catalog:'
         version: 0.30.3(astro@5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1))
-      '@fontsource/inter':
-        specifier: ^5.1.0
-        version: 5.1.0
       astro:
         specifier: 'catalog:'
         version: 5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1)
@@ -58,6 +55,9 @@ importers:
       '@astrojs/starlight':
         specifier: 'catalog:'
         version: 0.30.3(astro@5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1))
+      '@fontsource-variable/vazirmatn':
+        specifier: ^5.1.1
+        version: 5.1.1
       astro-expressive-code:
         specifier: ^0.38.3
         version: 0.38.3(astro@5.1.2(rollup@4.29.1)(typescript@5.7.2)(yaml@2.5.1))
@@ -475,8 +475,8 @@ packages:
   '@expressive-code/plugin-text-markers@0.38.3':
     resolution: {integrity: sha512-dPK3+BVGTbTmGQGU3Fkj3jZ3OltWUAlxetMHI6limUGCWBCucZiwoZeFM/WmqQa71GyKRzhBT+iEov6kkz2xVA==}
 
-  '@fontsource/inter@5.1.0':
-    resolution: {integrity: sha512-zKZR3kf1G0noIes1frLfOHP5EXVVm0M7sV/l9f/AaYf+M/DId35FO4LkigWjqWYjTJZGgplhdv4cB+ssvCqr5A==}
+  '@fontsource-variable/vazirmatn@5.1.1':
+    resolution: {integrity: sha512-Tugc1E5yFSvD/DLuCJ3qZjjLggzz1VNuAGfzU4l29IEHp9GfgRdHEiukEAWcAnQ1UnsSXfjUnhMmJiixOYR2CA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2671,7 +2671,7 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.38.3
 
-  '@fontsource/inter@5.1.0': {}
+  '@fontsource-variable/vazirmatn@5.1.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

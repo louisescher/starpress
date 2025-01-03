@@ -2,7 +2,15 @@
 import type { Props } from "@astrojs/starlight/props";
 import StarlightHead from "@astrojs/starlight/components/Head.astro";
 import { ClientRouter } from "astro:transitions";
+import vazirmatn from "@fontsource-variable/vazirmatn/files/vazirmatn-latin-wght-normal.woff2?url";
 ---
 
 <StarlightHead {...Astro.props} />
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href={vazirmatn}
+  crossorigin="anonymous"
+/>
 <ClientRouter />

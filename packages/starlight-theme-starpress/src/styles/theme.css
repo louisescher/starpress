@@ -1,3 +1,7 @@
+body {
+  font-family: 'Vazirmatn Variable', Arial, Helvetica, sans-serif;
+}
+
 ::view-transition-group(root) {
 	animation-duration: 0s !important; /* Disable the animation by setting duration to 0 */
 }

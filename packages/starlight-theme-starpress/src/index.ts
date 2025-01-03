@@ -1,4 +1,5 @@
 import type { StarlightPlugin, StarlightUserConfig } from "@astrojs/starlight/types";
+import type { AstroIntegration } from 'astro'
 
 type ComponentName = keyof NonNullable<StarlightUserConfig['components']>
 
@@ -8,20 +9,39 @@ function createComponents(components: ComponentName[]) {
 	return obj
 }
 
+function integration(): AstroIntegration {
+	return {
+		name: 'starlight-theme-starpress',
+		hooks: {
+			'astro:config:setup': ({ updateConfig }) => {
+				updateConfig({
+					vite: {
+						ssr: {
+							noExternal: ['@fontsource-variable/vazirmatn']
+						}
+					}
+				})
+			}
+		}
+	}
+}
+
 export default function createPlugin(): StarlightPlugin {
 	return {
 		name: "starlight-theme-starpress",
 		hooks: {
-			setup: ({ config, updateConfig }) => {
+			setup: ({ config, updateConfig, addIntegration }) => {
 				updateConfig({
 					components: createComponents([
 						'Head'
 					]),
 					customCss: [
 						"starlight-theme-starpress/styles/theme.css",
+						"@fontsource-variable/vazirmatn",
 						...(config.customCss ?? []),
 					]
 				});
+				addIntegration(integration())
 			},
 		},
 	};

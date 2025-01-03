@@ -13,11 +13,6 @@ export default defineConfig({
 			social: {
 				github: "https://github.com/louisescher/starlight-theme-starpress",
 			},
-			customCss: [
-				"@fontsource/inter/400.css",
-				"@fontsource/inter/600.css",
-				"./src/custom.css",
-			],
 			sidebar: [
 				{
 					label: "Guides",
